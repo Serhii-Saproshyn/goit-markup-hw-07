@@ -17,30 +17,37 @@
   </head>
 
   <body>
-    <header>
-      <div class="container main-nav">
+    <header class="page-header">
+      <div class="container page-header__main-nav">
         <nav>
-          <a lang="en" class="logo header" href="./index.html"
-            ><span class="logo-accent">Web</span><span class="logo-accent-second">Studio</span></a
+          <a lang="en" class="page-header__logo page-header__logo--header" href="./index.html"
+            ><span class="page-header__logo-accent">Web</span
+            ><span class="page-header__logo-accent-second">Studio</span></a
           >
           <ul class="site-nav">
-            <li class="item"><a class="link" href="./index.html">Студія</a></li>
-            <li class="item"><a class="link current" href="./portfolio.html">Портфоліо</a></li>
-            <li class="item"><a class="link" href="">Контакти</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--current" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="site-nav__item"><a class="site-nav__link" href="">Контакти</a></li>
           </ul>
         </nav>
         <ul class="site-contacts">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com"
-              ><svg width="16" height="12" class="nav-icon">
+          <li class="site-contacts__item">
+            <a class="site-contacts__link" href="mailto:info@devstudio.com"
+              ><svg width="16" height="12" class="site-contacts__icon">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a class="link" href="tel:+380961111111"
-              ><svg width="10" height="16" class="nav-icon">
+          <li class="site-contacts__item">
+            <a class="site-contacts__link" href="tel:+380961111111"
+              ><svg width="10" height="16" class="site-contacts__icon">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -52,24 +59,34 @@
     <main>
       <section class="examples">
         <div class="container">
-          <h1 class="visually-hidden">Наші роботи</h1>
-          <ul class="examples-list">
-            <li class="item"><button type="button" class="button secondary">Усі</button></li>
-            <li class="item"><button type="button" class="button secondary">Веб-сайти</button></li>
-            <li class="item"><button type="button" class="button secondary">Додатки</button></li>
-            <li class="item"><button type="button" class="button secondary">Дизайн</button></li>
-            <li class="item"><button type="button" class="button secondary">Маркетинг</button></li>
+          <h1 class="examples__title--visually-hidden">Наші роботи</h1>
+          <ul class="examples__list">
+            <li class="examples__item">
+              <button type="button" class="examples__button button">Усі</button>
+            </li>
+            <li class="examples__item">
+              <button type="button" class="examples__button button">Веб-сайти</button>
+            </li>
+            <li class="examples__item">
+              <button type="button" class="examples__button button">Додатки</button>
+            </li>
+            <li class="examples__item">
+              <button type="button" class="examples__button button">Дизайн</button>
+            </li>
+            <li class="examples__item">
+              <button type="button" class="examples__button button">Маркетинг</button>
+            </li>
           </ul>
           <ul class="examples-container">
-            <li class="item">
+            <li class="examples-container__item">
               <a
-                class="link"
+                class="examples-container__link"
                 href="http://google.com"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                ><div class="thumb-examples">
-                  <div class="thumb-description">
-                    <p class="thumb-paragraph">
+                ><div class="examples-container__thumb">
+                  <div class="overlay">
+                    <p class="ovelay__paragraph">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
@@ -82,17 +99,17 @@
                     width="370"
                   />
                 </div>
-                <div class="examples-description">
-                  <h2 class="examples-title">Технокряк</h2>
-                  <p class="examples-paragraph">Веб-сайт</p>
+                <div class="examples-container__description">
+                  <h2 class="examples-container__title">Технокряк</h2>
+                  <p class="examples-container__paragraph">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href=""
-                ><div class="thumb-examples">
-                  <div class="thumb-description">
-                    <p lang="en" class="thumb-paragraph">Lorem ipsum dolor sit amet.</p>
+            <li class="examples-container__item">
+              <a class="examples-container__link" href=""
+                ><div class="examples-container__thumb">
+                  <div class="overlay">
+                    <p lang="en" class="ovelay__paragraph">Lorem ipsum dolor sit amet.</p>
                   </div>
                   <img
                     class="examples-picture"
@@ -101,23 +118,23 @@
                     width="370"
                   />
                 </div>
-                <div class="examples-description">
-                  <h2 class="examples-title">
+                <div class="examples-container__description">
+                  <h2 class="examples-container__title">
                     Постер
                     <span lang="en"
                       ><span class="upper">N</span>ew <span class="upper">O</span>rlean vs
                       <span class="upper">G</span>olden <span class="upper">s</span>tar</span
                     >
                   </h2>
-                  <p class="examples-paragraph">Дизайн</p>
+                  <p class="examples-container__paragraph">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href=""
-                ><div class="thumb-examples">
-                  <div class="thumb-description">
-                    <p lang="en" class="thumb-paragraph">
+            <li class="examples-container__item">
+              <a class="examples-container__link" href=""
+                ><div class="examples-container__thumb">
+                  <div class="overlay">
+                    <p lang="en" class="ovelay__paragraph">
                       Lorem ipsum dolor sit amet, consectetur adipisicing.
                     </p>
                   </div>
@@ -128,19 +145,19 @@
                     width="370"
                   />
                 </div>
-                <div class="examples-description">
-                  <h2 class="examples-title">
+                <div class="examples-container__description">
+                  <h2 class="examples-container__title">
                     Ресторан <span lang="en"><span class="upper">S</span>eafood</span>
                   </h2>
-                  <p class="examples-paragraph">Додаток</p>
+                  <p class="examples-container__paragraph">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href=""
-                ><div class="thumb-examples">
-                  <div class="thumb-description">
-                    <p lang="en" class="thumb-paragraph">
+            <li class="examples-container__item">
+              <a class="examples-container__link" href=""
+                ><div class="examples-container__thumb">
+                  <div class="overlay">
+                    <p lang="en" class="ovelay__paragraph">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, odit!
                     </p>
                   </div>
@@ -151,19 +168,19 @@
                     width="370"
                   />
                 </div>
-                <div class="examples-description">
-                  <h2 class="examples-title">
+                <div class="examples-container__description">
+                  <h2 class="examples-container__title">
                     Проєкт <span lang="en"><span class="upper">P</span>rime</span>
                   </h2>
-                  <p class="examples-paragraph">Маркетинг</p>
+                  <p class="examples-container__paragraph">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href=""
-                ><div class="thumb-examples">
-                  <div class="thumb-description">
-                    <p lang="en" class="thumb-paragraph">
+            <li class="examples-container__item">
+              <a class="examples-container__link" href=""
+                ><div class="examples-container__thumb">
+                  <div class="overlay">
+                    <p lang="en" class="ovelay__paragraph">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione natus
                       reiciendis et.
                     </p>
@@ -175,19 +192,19 @@
                     width="370"
                   />
                 </div>
-                <div class="examples-description">
-                  <h2 class="examples-title">
+                <div class="examples-container__description">
+                  <h2 class="examples-container__title">
                     Проєкт <span lang="en"><span class="upper">B</span>oxes</span>
                   </h2>
-                  <p class="examples-paragraph">Додаток</p>
+                  <p class="examples-container__paragraph">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href=""
-                ><div class="thumb-examples">
-                  <div class="thumb-description">
-                    <p lang="en" class="thumb-paragraph">
+            <li class="examples-container__item">
+              <a class="examples-container__link" href=""
+                ><div class="examples-container__thumb">
+                  <div class="overlay">
+                    <p lang="en" class="ovelay__paragraph">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam reiciendis a,
                       dolorum laudantium soluta molestias.
                     </p>
@@ -199,19 +216,19 @@
                     width="370"
                   />
                 </div>
-                <div class="examples-description">
-                  <h2 class="examples-title" lang="en">
+                <div class="examples-container__description">
+                  <h2 class="examples-container__title" lang="en">
                     Inspiration has no <span class="upper">B</span>orders
                   </h2>
-                  <p class="examples-paragraph">Веб-сайт</p>
+                  <p class="examples-container__paragraph">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href=""
-                ><div class="thumb-examples">
-                  <div class="thumb-description">
-                    <p lang="en" class="thumb-paragraph">
+            <li class="examples-container__item">
+              <a class="examples-container__link" href=""
+                ><div class="examples-container__thumb">
+                  <div class="overlay">
+                    <p lang="en" class="ovelay__paragraph">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quaerat rem.
                     </p>
                   </div>
@@ -222,38 +239,40 @@
                     width="370"
                   />
                 </div>
-                <div class="examples-description">
-                  <h2 class="examples-title" lang="en">
+                <div class="examples-container__description">
+                  <h2 class="examples-container__title" lang="en">
                     Видання
                     <span lang="en"
                       ><span class="upper">L</span>imited <span class="upper">E</span>dition
                     </span>
                   </h2>
-                  <p class="examples-paragraph">Дизайн</p>
+                  <p class="examples-container__paragraph">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href=""
-                ><div class="thumb-examples">
-                  <div class="thumb-description">
-                    <p lang="en" class="thumb-paragraph">
+            <li class="examples-container__item">
+              <a class="examples-container__link" href=""
+                ><div class="examples-container__thumb">
+                  <div class="overlay">
+                    <p lang="en" class="ovelay__paragraph">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                   </div>
                   <img class="examples-picture" src="./images/pf8img.jpg" alt="бірка" width="370" />
                 </div>
-                <div class="examples-description">
-                  <h2 class="examples-title">Проєкт <span class="upper" lang="en">lab</span></h2>
-                  <p class="examples-paragraph">Маркетинг</p>
+                <div class="examples-container__description">
+                  <h2 class="examples-container__title">
+                    Проєкт <span class="upper" lang="en">lab</span>
+                  </h2>
+                  <p class="examples-container__paragraph">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href=""
-                ><div class="thumb-examples">
-                  <div class="thumb-description">
-                    <p lang="en" class="thumb-paragraph">
+            <li class="examples-container__item">
+              <a class="examples-container__link" href=""
+                ><div class="examples-container__thumb">
+                  <div class="overlay">
+                    <p lang="en" class="ovelay__paragraph">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente possimus
                       sunt reiciendis hic at nesciunt repudiandae porro perspiciatis quidem soluta?
                     </p>
@@ -265,11 +284,11 @@
                     width="370"
                   />
                 </div>
-                <div class="examples-description">
-                  <h2 class="examples-title" lang="en">
+                <div class="examples-container__description">
+                  <h2 class="examples-container__title" lang="en">
                     Growing <span class="upper">B</span>usiness
                   </h2>
-                  <p class="examples-paragraph">Додаток</p>
+                  <p class="examples-container__paragraph">Додаток</p>
                 </div>
               </a>
             </li>
@@ -278,16 +297,17 @@
       </section>
     </main>
     <footer>
-      <div class="container footer-content">
+      <div class="container page-footer">
         <div>
-          <a lang="en" class="logo footer" href="./index.html"
-            ><span class="logo-accent">Web</span><span class="logo-accent-third">Studio</span></a
+          <a lang="en" class="page-footer__logo" href="./index.html"
+            ><span class="page-footer__logo-accent">Web</span
+            ><span class="page-footer__logo-accent-third">Studio</span></a
           >
           <address>
-            <ul class="site-contacts-footer">
+            <ul class="page-footer__contacts">
               <li>
                 <a
-                  class="link address"
+                  class="page-footer__link"
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -295,23 +315,25 @@
                 >
               </li>
               <li>
-                <a class="link address-second" href="mailto:info@devstudio.com"
+                <a class="page-footer__link-second" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li><a class="link address-second" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li>
+                <a class="page-footer__link-second" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
         <div>
-          <p class="features-title footer">Приєднуйтесь</p>
-          <ul class="social-list-footer">
+          <p class="page-footer__paragraph">Приєднуйтесь</p>
+          <ul class="page-footer__social-list">
             <li>
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="social-link-footer"
+                class="page-footer__link-third"
                 ><svg width="20" height="20" class="icon">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
               ></a>
@@ -321,7 +343,7 @@
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="social-link-footer"
+                class="page-footer__link-third"
                 ><svg width="20" height="20" class="icon">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
               ></a>
@@ -331,7 +353,7 @@
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="social-link-footer"
+                class="page-footer__link-third"
                 ><svg width="20" height="20" class="icon">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
               ></a>
@@ -341,20 +363,20 @@
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="social-link-footer"
+                class="page-footer__link-third"
                 ><svg width="20" height="20" class="icon">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
               ></a>
             </li>
           </ul>
         </div>
-        <form class="send-field">
-          <div class="footer-field">
+        <form class="page-footer__form">
+          <div class="page-footer__field">
             <label for="email">Підпишіться на розсилку</label>
             <input type="email" name="email" id="email" placeholder="E-mail" />
           </div>
-          <button type="submit" class="to-send">
-            Підписатися<svg width="24" height="24" class="send-icon">
+          <button type="submit" class="page-footer__button">
+            Підписатися<svg width="24" height="24" class="page-footer__icon">
               <use href="./images/symbol-defs.svg#icon-icon_send"></use>
             </svg>
           </button>
