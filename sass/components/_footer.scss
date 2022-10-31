@@ -43,19 +43,22 @@ address {
   color: $main-color;
   transition-property: background-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .page-footer__link-second {
   color: $footer-link-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
-}
 
-.page-footer__link:hover,
-.page-footer__link:focus,
-.page-footer__link-second:hover,
-.page-footer__link-second:focus {
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .page-footer__paragraph {
@@ -84,11 +87,11 @@ address {
   fill: $main-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
-}
 
-.page-footer__link-third:hover,
-.page-footer__link-third:focus {
-  background-color: $accent-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
 .page-footer__form {
@@ -99,20 +102,20 @@ address {
 .page-footer__field {
   display: flex;
   flex-direction: column;
-}
 
-.page-footer__field input {
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  & input {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.page-footer__field input:hover,
-.page-footer__field input:focus {
-  border-color: $accent-color;
-}
+  & input:hover,
+  & input:focus {
+    border-color: $accent-color;
+  }
 
-.page-footer__field input:hover::placeholder,
-.page-footer__field input:focus::placeholder {
-  color: $accent-color;
+  & input:hover::placeholder,
+  & input:focus::placeholder {
+    color: $accent-color;
+  }
 }
 
 .page-footer__button {
@@ -134,11 +137,11 @@ address {
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
-}
 
-.page-footer__button:hover,
-.page-footer__button:focus {
-  background-color: $back-main-button;
+  &:hover,
+  &:focus {
+    background-color: $back-main-button;
+  }
 }
 
 .page-footer__icon {
